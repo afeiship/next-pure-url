@@ -5,9 +5,11 @@
   var PROTOCOL = '://';
 
   nx.pureUrl = function (inUrl) {
-    var index = inUrl.indexOf(PROTOCOL);
-    if (index > -1) {
-      return inUrl.slice(index + 3);
+    if (inUrl) {
+      var index = inUrl.indexOf(PROTOCOL);
+      if (index > -1) {
+        return inUrl.slice(index + 3);
+      }
     }
     return inUrl;
   };
