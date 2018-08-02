@@ -8,5 +8,9 @@ npm install -S afeiship/next-pure-url --registry=https://registry.npm.taobao.org
 
 ## usage:
 ```js
-//DOCS here!
+var url = 'https://www.baidu.com';
+var pureUrl = nx.pureUrl(url);
+
+// results:
+// www.baidu.com
 ```
